@@ -12,31 +12,6 @@ $(document).ready(function() {
     slajder(1);
     $("#naslov").hide();
     $("#naslov").fadeIn("slow");
-    $("#desno").click(
-        
-        function(){
-            slajder(0);
-        }
-       
-        function () {
-        var trenutni=$('#slike1 .vidljiv');
-        var sledeci=trenutni.parent().next().length?trenutni.parent().next().children(':first'):trenutni.parent().parent().children(':first').children(':first');
-        trenutni.hide().removeClass('vidljiv');
-        sledeci.fadeIn().addClass('vidljiv');
-    
-        var trenutni1=$('#brojac .aktivan');
-        var sledeci1=trenutni1.next().length?trenutni1.next():trenutni1.parent().children(':first');
-        trenutni1.removeClass('aktivan');
-        sledeci1.addClass('aktivan');
-
-        var trenutni2=$('#opis .vidljiv');
-        var sledeci2=trenutni2.next().length?trenutni2.next():trenutni2.parent().children(':first');
-        trenutni2.removeClass('vidljiv');
-        sledeci2.addClass('vidljiv');
-    
-        }
-    
-    );
     $("#levo").click(
         
         function () {
